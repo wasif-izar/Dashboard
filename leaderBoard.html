@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leader Board</title>
+        <style type="text/css">
+        * {
+        font-family: sans-serif; /* Change your font family */
+        }
+
+        .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 100%;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        /*Styling table head row*/
+        .content-table thead tr {
+        /* background-color: #009879;
+         */
+         background-color: #330748;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        }
+
+        .content-table th,
+        .content-table td {
+        padding: 12px 15px;
+        }
+
+        .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+        }
+        /* Styling even rows to make zebra like colour scheme */
+        .content-table tbody tr:nth-of-type(even) {
+        /* background-color: #f3f3f3 !important; */
+        background-color: #a39aaa !important;
+        }
+
+        .content-table tbody tr:nth-of-type(odd) {
+        background-color: #e9cff58f !important;
+        }
+        /* Adding a line at the wnd of table */
+        .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #330748;
+        }
+        /* Styling Active row Which is set to top most row */
+        .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: #330748;
+        }
+        .bd{
+            /* background: linear-gradient(139deg,#35def8cb 0%,#fa2c93b6 90%); */
+            background: #2d0435;
+        }        
+        </style>
+        </head>
+        <body class="bd">
+            <a style="color: aliceblue; font-weight: bold; text-decoration: none;" href="index.html">Home</a>
+            <table class="content-table">
+                <!-- Table Header -->
+            <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Best Score</th>
+                <th>Points</th>
+            </tr>
+            </thead>
+            <!-- Table Body. -->
+            <tbody>
+            <tr class="active-row">
+                <td>1</td>
+                <td>Petrick Alves Devano</td>
+                <td>98</td>
+                <td>2324</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jenifer Hudson</td>
+                <td>96</td>
+                <td>2310</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Johnson Miller</td>
+                <td>89</td>
+                <td>2119</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Strak Billings</td>
+                <td>82</td>
+                <td>1998</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Henry Clark</td>
+                <td>81</td>
+                <td>1988</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Harry Grey</td>
+                <td>80</td>
+                <td>1978</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Gary Nale</td>
+                <td>79</td>
+                <td>1965</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Steaf Jing</td>
+                <td>72</td>
+                <td>1920</td>
+            </tr>
+            </tbody>
+        </table>
+     </body>
+  </html>

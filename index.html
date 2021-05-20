@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Dashboard</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+         integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+    <body>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="upcomingLessons.html">
+                        <span class="icon"><img src="https://img.icons8.com/ios-filled/20/ffffff/book.png"/></span>
+                        <span class="title">Upcoming lessons</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Tasks.html">
+                        <span class="icon"><img src="https://img.icons8.com/ios-filled/20/ffffff/task.png"/></span>
+                        <span class="title">Tasks</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="leaderBoard.html">
+                        <span class="icon"><img src="https://img.icons8.com/metro/20/ffffff/leaderboard.png"/></span>
+                        <span class="title">Leader board</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="courses.html">
+                        <span class="icon"><img src="https://img.icons8.com/ios-filled/20/ffffff/courses.png"/></span>
+                        <span class="title">My courses</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="timeTable.html">
+                        <span class="icon"><img src="https://img.icons8.com/ios-filled/20/ffffff/timetable.png"/></span>
+                        <span class="title">Timetable</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="progress.html">
+                        <span class="icon"><img src="https://img.icons8.com/ios-glyphs/20/ffffff/home.png"/></span>
+                        <span class="title">Homework Progress</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <script type="text/javascript">
+        function toggleMenu(){
+            let navigation = document.querySelector('.navigation');
+            let toggle = document.querySelector('.toggle');
+            navigation.classList.toggle('active');
+            toggle.classList.toggle('active')
+        }
+        </script>
+    </body>
+</html>
